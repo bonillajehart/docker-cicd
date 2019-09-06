@@ -1,0 +1,4 @@
+Dockerfile.dev
+node_modules/
+Dockerfile
+package-lock.json
