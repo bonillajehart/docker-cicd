@@ -6,4 +6,4 @@ before_install:
   - docker build -t seriousbob/docker-cicd -f Dockerfile-dev .
 
 script:
-  - docker run seriousbob/docker-cicd npm run test -- --coverage
+  - docker run -e CI=true seriousbob/docker-cicd npm run test
